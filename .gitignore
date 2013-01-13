@@ -14,4 +14,9 @@
 /log/*.log
 /tmp
 
+<<<<<<< HEAD
 .DS_Store
+=======
+# Ignore the stupid mac files
+.DS_store
+>>>>>>> updating gitignore to filter out mac ds_store files
