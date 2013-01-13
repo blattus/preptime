@@ -2,7 +2,7 @@ module ApplicationHelper
 
 	# Returns the full title on a per-page basis			# documentation comment
 	def full_title(page_title)								# method definition
-		base_title = "Ruby on Rails Tutorial Sample App"	# variable assignment
+		base_title = "Stopwatch"							# variable assignment
 		if page_title.empty?								# boolean test
 			base_title										# implicit return
 		else
