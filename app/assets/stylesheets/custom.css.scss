@@ -1,3 +1,5 @@
+$linkColor: #188073;
+$btnPrimaryBackground: #188073;
 @import "bootstrap";
 
 /* mixins, variables, etc. */
@@ -42,6 +44,7 @@ h1 {
   text-align: center;
 }
 
+
 h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
@@ -80,7 +83,7 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
+  border-top: 3px solid $grayMediumLight;
   color: $grayLight;
   a {
     color: $gray;
