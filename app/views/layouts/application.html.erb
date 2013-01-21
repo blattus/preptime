@@ -10,9 +10,27 @@
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+
+      <% if flash[:error] %>
+        <div class="alert alert-error">
+          <%= content_tag(:div, flash.now[:error], :id => "flash_error") %>
+        </div>
+      <% end %>
+
+      <% if flash[:notice] %>
+        <div class="alert alert-info">
+          <%= content_tag(:div, flash.now[:notice], :id => "flash_error") %>
+        </div>
+      <% end %>
+
+      <% if flash[:alert] %>
+        <div class="alert">
+          <%= content_tag(:div, flash.now[:alert], :id => "flash_error") if flash[:alert] %>
+        </div>
+      <% end %>
+
       <%= yield %>
+
       <%= render 'layouts/footer' %>
     </div>
   </body>
