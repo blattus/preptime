@@ -13,6 +13,7 @@ SampleApp::Application.routes.draw do
     get 'signup', :to => "devise/registrations#new"
     get 'login', :to => 'devise/sessions#new'
     get 'logout', :to => 'devise/sessions#destroy'
+    get 'edit',   :to => 'devise/registrations#edit'
   end
 
 
