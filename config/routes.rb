@@ -2,6 +2,8 @@ SampleApp::Application.routes.draw do
   devise_for :users #:path_names =>
         #{ :sign_in => 'login', :sign_out => 'logout' }
 
+
+
   root to: 'static_pages#home'
   
   match '/home',    to: 'static_pages#home'
@@ -9,11 +11,15 @@ SampleApp::Application.routes.draw do
   match '/about',    to: 'static_pages#about'
   match '/contact',   to: 'static_pages#contact'
 
+  match '/profile',   to: 'profiles#view'
+  match '/profile/edit', to: 'profiles#edit'
+  resources :profiles
+
   devise_scope :user do
     get 'signup', :to => "devise/registrations#new"
     get 'login', :to => 'devise/sessions#new'
     get 'logout', :to => 'devise/sessions#destroy'
-    get 'edit',   :to => 'devise/registrations#edit'
+    get 'settings',   :to => 'devise/registrations#edit'
   end
 
 
