@@ -5,5 +5,6 @@ class AddInformationToProfiles < ActiveRecord::Migration
     add_column :profiles, :state, :string
     add_column :profiles, :school, :string
     add_column :profiles, :event, :string
+    add_column :profiles, :id, :integer
   end
 end
