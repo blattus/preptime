@@ -20,6 +20,7 @@
   	<%= f.password_field :password_confirmation %>
   </div>
 
+<p>Want to give us some profile information? The below is optional</p>
   <%= f.fields_for :profile do |profile_form| %>
   	<div>
   		<%= profile_form.label :first_name %>
@@ -29,6 +30,10 @@
   		<%= profile_form.label :last_name %>
   		<%= profile_form.text_field :last_name %>
   	</div>
+    <div>
+      <%= profile_form.label :school %>
+      <%= profile_form.text_field :school %>
+    </div>
   <% end %>
 
   <div>

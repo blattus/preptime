@@ -3,7 +3,7 @@
 
 <div>
 	<div>
-		<%= form_for(current_user) do |f| %>
+		<%= form_for(current_user.profile) do |f| %>
 
 			<%= f.label :first_name %>
 			<%= f.text_field :first_name %>
@@ -16,6 +16,8 @@
 
 			<%= f.label :school %>
 			<%= f.text_field :school %>
+
+			<p><%= f.submit "Submit Changes", class: "btn btn-large btn-primary" %></p>
 
 
 		<% end %>
