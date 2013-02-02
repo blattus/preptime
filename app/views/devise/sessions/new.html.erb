@@ -1,30 +1,24 @@
 <!-- SIGN IN PAGE -->
 
-<h1>Please sign in.</h1>
+<h1>Welcome back! <small>Please sign in.</small></h1>
 
-	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "form-horizontal"}) do |f| %>
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 	  
-	  <div class="control-group">
-	  	<div class="controls">
+	  <div>
 	  		<%= f.email_field :email, :placeholder => "Email", :autofocus => true %>
 	  	</div>
-	  </div>
-
-	  <div class="control-group">
-	  	<div class="controls">
+<br>
+	  <div>
 	  		<%= f.password_field :password, :placeholder => "Password" %>
   		</div>
-	  </div>
 
 	  <% if devise_mapping.rememberable? -%>
-	    <div class="control-group">
-	    	<div class="controls">
+	    <div>
 	    		<%= f.check_box :remember_me, :class => "checkbox" %> <%= f.label :remember_me, :class => "checkbox" %>
 	    	</div>
-	    </div>
 	  <% end -%>
-
-	  <div class="control-group controls">
+<br>
+	  <div>
 	  	<%= f.submit "Sign in", :class => "btn btn-large btn-primary" %>
 	  </div>
 	
