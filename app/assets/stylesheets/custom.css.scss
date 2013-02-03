@@ -16,6 +16,8 @@ body {
   padding-top: 100px;
 }
 
+
+
 section {
   overflow: auto;
 }
@@ -87,12 +89,21 @@ nav {
     }
 }
 
+/*
+.navbar {
+  .navbar-inner {
+  background-color: #eeeeee;
+  background-image: none;
+  }
+} */
+
+
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 2px solid $grayMediumLight;
+  border-top: 2px solid #188073;
   color: $grayLight;
   a {
     color: $gray;
