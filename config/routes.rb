@@ -12,6 +12,7 @@ SampleApp::Application.routes.draw do
   match '/profile',   to: 'profiles#view'
   match '/profile/edit', to: 'profiles#edit'
   resources :profiles
+  resources :users
 
   devise_scope :user do
     get 'signup', :to => 'devise/registrations#new'
