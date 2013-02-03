@@ -1,9 +1,9 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "stopwatch", root_path, id: "logo" %>
+          <%= link_to image_tag("logo-header-2.png"), root_path, :id => "logo" %> 
           <nav>
-            <ul class="nav pull-right">
+            <ul class="nav pull-right" id="navHeader">
               <li><%= link_to "Help",    help_path %></li>
               <% if user_signed_in? %>
                 <li><%= link_to "#{current_user.email}", profile_path %></li>

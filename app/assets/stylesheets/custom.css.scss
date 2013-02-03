@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 section {
@@ -67,6 +67,7 @@ p {
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
+  padding-bottom: 10px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -75,12 +76,23 @@ p {
   }
 }
 
+nav {
+  letter-spacing: 0.5px;
+}
+
+#navHeader {
+    padding-top: 20px;
+    a:hover {
+    font-weight: bold;
+    }
+}
+
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 3px solid $grayMediumLight;
+  border-top: 2px solid $grayMediumLight;
   color: $grayLight;
   a {
     color: $gray;
