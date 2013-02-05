@@ -9,11 +9,7 @@ SampleApp::Application.routes.draw do
   match '/about',    to: 'static_pages#about'
   match '/contact',   to: 'static_pages#contact'
 
-  #match '/profile',   to: 'profiles#view'
-  #get '/profile/edit', to: 'profiles#edit'
   resource :profile
-
-  #resources :users
 
   devise_scope :user do
     get 'signup', :to => 'devise/registrations#new'
