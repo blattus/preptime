@@ -13,7 +13,7 @@ class ProfilesController < ApplicationController
       flash[:notice] = "Profile updated successfully!"
       redirect_to '/profile'
     else
-      flash.now[:error] = "update failed :("
+      flash.now[:error] = "Oops something went wrong! Want to try again?"
       redirect_to '/profile/edit'
     end
   end
