@@ -1,0 +1,17 @@
+<%= provide(:title, "My Profile") %>
+<h1>My Profile</h1>
+
+<p><%= link_to "Edit Profile", profile_edit_path %>
+
+<div>
+	<p><strong>Name</strong>  
+		<%= "#{current_user.profile.first_name} #{current_user.profile.last_name}" %>
+	</p>
+	<p><strong>State</strong>
+		<%= current_user.profile.state %>
+	</p>
+	<p><strong>School</strong>
+		<%= current_user.profile.school %>
+	</p>
+
+</div>
