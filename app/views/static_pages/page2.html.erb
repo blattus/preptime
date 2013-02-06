@@ -1,0 +1,49 @@
+<% provide(:title, 'Build Your Tournament') %>
+<!--PROGRESS BAR-->
+<ul class="breadcrumb">
+  <li><a href="#">Start</a> <span class="divider">/</span></li>
+  <li class="active">Basics</li>
+</ul>
+<div class="row">
+	<div class="span1">
+		<span class="label">PROGRESS</span>
+</div>
+<div class="span11">
+	<div class="progress">
+  <div class="bar bar-success" style="width: 3%;"></div>
+  <div class="bar bar-warning" style="width: 0%;"></div>
+  <div class="bar bar-danger" style="width: 0%;"></div>
+</div>
+</div>
+</div>
+
+<!--CONTENT-->
+
+<div class="row">
+	<div class="span3">
+		<h1>The Basics</h1>
+	</div>
+	<div class="span9">
+
+<form class="form-inline">
+  <p>What is the <strong>name</strong> of your tournament? <input type="text" class="input-xlarge pull-right" placeholder="Tournament Name"></p>
+<br>
+  <p><strong>When</strong> is the tournament? <input type="text" class="input-xlarge pull-right" placeholder="Dates"></p>
+<br>
+<!--Note: Let's do a calendar with dates for the when portion.-->
+
+  <p><strong>Where</strong> is the tournament? <input type="text" class="input-xlarge pull-right" placeholder="Myers Park High School"></p>
+ 
+<!--Where should auto-populate to the coach's school, but can be manually changed.-->
+  
+<div class="form-actions">
+  <button type="submit" class="btn btn-large btn-primary pull-right">Next <i class"icon-chevron-right"></i></button>
+  <button type="button" class="btn btn-small">Previous</button>
+</div>
+
+</form>
+ 
+  
+</div>
+	</div>
+</div>
