@@ -19,6 +19,18 @@ SampleApp::Application.routes.draw do
   end
 
 
+  match '/page1', to: 'static_pages#page1'
+  match '/page2', to: 'static_pages#page2'
+  match '/page3', to: 'static_pages#page3'
+  match '/page4', to: 'static_pages#page4'
+  match '/page5', to: 'static_pages#page5'
+  match '/page6', to: 'static_pages#page6'
+  match '/page7', to: 'static_pages#page7'
+  match '/page8', to: 'static_pages#page8'
+  match '/page9', to: 'static_pages#page9'
+  match '/page10', to: 'static_pages#page10'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
