@@ -15,20 +15,55 @@
   <li><a href="#">Messages</a></li>
   </ul>
   </div>
-  <div class="span10">
-    <div><h1>The Laird Lewis Invitational <small>Myers Park High School</small></h1>
-                <%= image_tag("tournament-header.png") %> 
-                <p></p>
-    </div>
 
-    <ul class="nav nav-tabs">
-  <li><a href="#home" data-toggle="tab">Invitation</a></li>
-  <li><a href="#updates" data-toggle="tab">Updates</a></li>
-  <li><a href="#general" data-toggle="tab">General Information</a></li>
-  <li><a href="#fees" data-toggle="tab">Fees</a></li>
-</ul>
-<h2>Invitation</h2>
-<p>Dear Colleagues,</p>
+<div class="row">
+  <div class="span10">
+    <h1>The Laird Lewis Invitational <small>Jan. 3-4, 2014</small></h1>
+    <h2>Myers Park High School, Charlotte, NC</h2>
+                <%= image_tag("tournament-header.png") %> <br><br>
+    <div class="row">
+      <div class="span5"><div class="well">
+  <address>
+  <strong>Tournament Location</strong><br>
+  2400 Colony Road<br>
+  Charlotte, NC 28209<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+ 
+<address>
+  <strong>Coach</strong><br>
+  Andrew G. West<br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+</div></div>
+
+
+      <div class="span5">
+
+      <div class="well">
+        <h4>Registration</h4>
+        Opens: Jan. 2<br>
+        Closes: Jan. 12<br>
+        <button class="btn btn-large pull-right" type="button">Register</button>
+        <br>
+        <br>
+      </div>
+
+    </div>
+</div>
+
+
+<br>
+
+
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Invitation</a></li>
+    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p><p>Dear Colleagues,</p>
 <p>
 On behalf of the Myers Park Speech and Debate team, I would like to invite you to consider participation in the 40th Annual Laird Lewis Invitational at Myers Park High School in Charlotte, North Carolina on January 4-5, 2013.  As this is our 40th year, we are calling our tournament Laird Lewis XL because it will be bigger and better than ever. 
 </p><p>
@@ -57,12 +92,11 @@ Jason Kline, Tournament Operations Director
 Robert Wieckowski, Tournament Logstics
 </p><p>
 Mimi Pickens, Tournament Logistics
-</p>
+</p></p>
+    </div>
 
-</div>
+    <div class="tab-pane" id="tab2">
+      <p>Howdy, I'm in Section 2.</p>
+    </div>
 
-
-
-
-
-</div>
+  </div>
