@@ -29,7 +29,16 @@ SampleApp::Application.routes.draw do
   match '/page8', to: 'static_pages#page8'
   match '/page9', to: 'static_pages#page9'
   match '/page10', to: 'static_pages#page10'
-
+  match '/page11', to: 'static_pages#page11'
+  match '/page12', to: 'static_pages#page12'  
+  match '/page13', to: 'static_pages#page13'
+  match '/page14', to: 'static_pages#page14'
+  match '/page15', to: 'static_pages#page15'
+  match '/page16', to: 'static_pages#page16'
+  match '/page17', to: 'static_pages#page17'
+  match '/page18', to: 'static_pages#page18'
+  match '/page19', to: 'static_pages#page19'
+  match '/page20', to: 'static_pages#page20'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -57,7 +66,7 @@ SampleApp::Application.routes.draw do
   #     end
   #   end
 
-  # Sample resource route with sub-resources:
+  # Sample resource route with sub-resource:
   #   resources :products do
   #     resources :comments, :sales
   #     resource :seller
