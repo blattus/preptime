@@ -5,6 +5,7 @@ class CreateRooms < ActiveRecord::Migration
       t.string :size
       t.string :preferred_event
       t.boolean :is_accessible
+      t.integer :building_id
 
       t.timestamps
     end

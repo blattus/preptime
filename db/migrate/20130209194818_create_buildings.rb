@@ -4,6 +4,7 @@ class CreateBuildings < ActiveRecord::Migration
       t.string :name
       t.string :code
       t.integer :distance_from_tab
+      t.integer :tournament_id
 
       t.timestamps
     end

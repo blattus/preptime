@@ -9,6 +9,7 @@ class CreateEvents < ActiveRecord::Migration
       t.integer :number_of_prelims
       t.integer :number_of_elims
       t.boolean :is_flighted
+      t.integer :tournament_id
 
       t.timestamps
     end
