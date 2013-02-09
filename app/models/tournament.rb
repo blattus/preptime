@@ -1,8 +1,8 @@
 class Tournament < ActiveRecord::Base
-  attr_accessible :end_date, :location, :name, :number_of_elims, :number_of_prelims, :start_date
+  attr_accessible :end_date, :location, :name, :number_of_elims, 
+  			:number_of_prelims, :start_date
 
-  def to_param
-  	tournament_name.parameterize
-  end
+  has_many :buildings, :dependent => :destroy
+  has_many :rooms, :through => :buildings
 
 end

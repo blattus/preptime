@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130209203716) do
+ActiveRecord::Schema.define(:version => 20130209210023) do
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20130209203716) do
     t.integer  "distance_from_tab"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+    t.integer  "tournament_id"
   end
 
   create_table "events", :force => true do |t|
