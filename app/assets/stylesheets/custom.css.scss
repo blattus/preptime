@@ -1,5 +1,5 @@
-$linkColor: #188073;
-$btnPrimaryBackground: #188073;
+$linkColor: #006576;
+$btnPrimaryBackground: #006576;
 @import "bootstrap";
 
 /* mixins, variables, etc. */
@@ -98,12 +98,24 @@ nav {
 } */
 
 
+/* attributes for marketing */
+
+.sellHeads {
+  color: #006576;
+  text-align: center;
+  font-weight: bold;
+  }
+
+.featureHeads {
+  color: #006576;
+  }
+
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 2px solid #188073;
+  border-top: 2px solid #006576;
   color: $grayLight;
   a {
     color: $gray;
