@@ -18,6 +18,7 @@ SampleApp::Application.routes.draw do
     get 'settings',   :to => 'devise/registrations#edit'
   end
 
+  resources :tournaments
 
   match '/page1', to: 'static_pages#page1'
   match '/page2', to: 'static_pages#page2'
