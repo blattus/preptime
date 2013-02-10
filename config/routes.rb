@@ -19,6 +19,7 @@ SampleApp::Application.routes.draw do
   end
 
   resources :tournaments
+  resources :tournament_creation
 
   match '/page1', to: 'static_pages#page1'
   match '/page2', to: 'static_pages#page2'

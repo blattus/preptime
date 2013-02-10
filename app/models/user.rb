@@ -10,5 +10,6 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, 
   		:remember_me, :profile_attributes
   has_one :profile
+  has_many :tournaments
   accepts_nested_attributes_for :profile
 end

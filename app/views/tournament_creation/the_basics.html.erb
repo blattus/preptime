@@ -1,0 +1,71 @@
+<% provide(:title, 'Build Your Tournament | The Basics') %>
+
+<% for attribute in @tournament.attributes.keys %>
+	<p><%= attribute.humanize %> <%= @tournament.attributes[attribute].to_s %></p>
+<% end %>
+Tournament ID in Session: <%= session[:tournament_id] %>
+
+<!--PROGRESS BAR-->
+<ul class="breadcrumb">
+  <li><a href="#">Start</a> <span class="divider">/</span></li>
+  <li class="active">Basics</li>
+</ul>
+<div class="row">
+		<div class="span1">
+			<span class="label">PROGRESS</span>
+		</div>
+	<div class="span11">
+	 	<div class="progress progress-striped active">
+		 	<div class="bar bar-success" style="width: 3%;"></div>
+		  	<div class="bar bar-warning" style="width: 0%;"></div>
+		 	<div class="bar bar-danger" style="width: 0%;"></div>
+		</div>
+	</div>
+</div>
+
+<!--CONTENT-->
+
+<div class="row">
+	<div class="span3">
+		<h3>Sidebar Content</h3>
+	</div>
+
+	<div class="span9">
+		<h1>The Basics</h1>
+
+	<%= form_for(@tournament, :url => wizard_path, :method => :put) do |f| %>
+	 	<p>What is the <strong>name</strong> of your tournament? 
+	 		<%= f.text_field :name, :placeholder => "Tournament Name", :class => "input-xlarge pull-right" %></p>
+		<br>
+	 	<p><strong>When</strong> is the tournament? 
+	 		<div class="span3">From: </div>
+	 			<%= f.date_select :start_date, {:order => [:month, :day, :year]}, 
+					{:class => "input-small"} %>
+			<div class="span3">To: </div>
+	   		<p><%= f.date_select :end_date, {:order => [:month, :day, :year]}, 
+					{:class => "input-small"} %></p>
+
+		</p>
+		<br>
+
+
+	<!--Note: Let's do a calendar with dates for the when portion.-->
+
+		<p><strong>Where</strong> is the tournament?
+			<%= f.text_field :location, :class => "input-xlarge pull-right",
+					:value => @user.profile[:school],
+					:placeholder => "Lincoln Douglas High School" %></p>
+
+	 
+	<!--Where should auto-populate to the coach's school, but can be manually changed.-->
+	  
+	<br>
+
+	<%= f.submit "<- Previous", :class => "btn btn-default pull-left" %>
+	<%= f.submit "Next ->", :class => "btn btn-default pull-right" %>	
+ 
+ 	<% end %>
+
+	</div>
+</div>
+

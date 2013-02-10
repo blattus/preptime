@@ -1,0 +1,12 @@
+<h3>Events</h3>
+
+<% for attribute in @tournament.attributes.keys %>
+	<p><%= attribute.humanize %> <%= @tournament.attributes[attribute].to_s %></p>
+<% end %>
+Tournament ID in Session: <%= session[:tournament_id] %>
+
+<%= form_for(@tournament, :url => wizard_path, :method => :put) do |f| %>
+	
+	<%= f.submit "approve of the above?" %>
+
+<% end %>
